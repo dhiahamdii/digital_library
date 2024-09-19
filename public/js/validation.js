@@ -5,7 +5,7 @@ function validateDocumentForm() {
     var type = document.getElementById('type').value;
 
     if (titre.trim() === '' || auteur.trim() === '' || annee.trim() === '' || type === '') {
-        alert('Tous les champs sont obligatoirescc.');
+        alert('Tous les champs sont obligatoires.');
         return false;
     }
 

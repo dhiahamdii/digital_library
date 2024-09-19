@@ -31,9 +31,9 @@ header {
     z-index: 1000; /* Ensures header is above other content */
 }
 
-header h1 {
+.header h1 {
     margin: 0;
-    font-size: 1.8rem; /* Larger font for better visibility */
+    font-size: 2.5rem; /* Larger font size for header */
 }
 
 nav ul {

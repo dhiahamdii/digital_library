@@ -11,17 +11,17 @@
 <form action="index.php?action=ajouterDocument" method="post" onsubmit="return validateDocumentForm();">
     <div>
         <label for="titre">Titre:</label>
-        <input type="text" id="titre" name="titre" required>
+        <input type="text" id="titre" name="titre" >
     </div>
     
     <div>
         <label for="auteur">Auteur:</label>
-        <input type="text" id="auteur" name="auteur" required>
+        <input type="text" id="auteur" name="auteur" >
     </div>
     
     <div>
         <label for="annee">Année:</label>
-        <input type="number" id="annee" name="annee" min="1900" max="<?php echo date('Y'); ?>" required>
+        <input type="number" id="annee" name="annee"  >
     </div>
     
     <div>

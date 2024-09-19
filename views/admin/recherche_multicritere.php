@@ -13,7 +13,7 @@
     </div>
     <div>
         <label for="annee">Année:</label>
-        <input type="number" id="annee" name="annee" min="1000" max="<?php echo date('Y'); ?>">
+        <input type="number" id="annee" name="annee" >
     </div>
     <div>
         <label for="type">Type:</label>
