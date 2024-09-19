@@ -1,0 +1,279 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+/* Container */
+.container {
+    max-width: 1200px; /* Set a max width for larger screens */
+    width: 90%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1.5rem 0; /* Increased padding for a modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow for depth */
+    position: sticky; /* Makes header sticky */
+    top: 0;
+    z-index: 1000; /* Ensures header is above other content */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Larger font for better visibility */
+}
+
+nav ul {
+    display: flex; /* Uses flexbox for horizontal layout */
+    justify-content: flex-end; /* Aligns navigation to the right */
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px; /* Improved spacing between links */
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 0; /* Added padding for better click area */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Color change on hover */
+}
+
+/* Main content */
+main {
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem; /* Increased margin for better spacing */
+}
+
+/* Dashboard widgets */
+.dashboard-widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; /* Increased gap for modern look */
+    margin-bottom: 2rem;
+}
+
+.widget {
+    background: #fff;
+    padding: 1.5rem; /* Increased padding for better content space */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.2); /* Enhanced shadow */
+    transition: transform 0.2s ease; /* Adding transition for hover effect */
+}
+
+.widget:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+
+.widget h3 {
+    margin-bottom: 1rem;
+    color: #34495e;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem; /* Adjusted margin */
+    background: #fff;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures borders are rounded */
+}
+
+th, td {
+    padding: 1rem; /* Increased padding */
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 1.5rem; /* Increased padding */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 0.75rem; /* Increased padding */
+    margin-bottom: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px; /* Adjusted radius */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3498db; /* Change border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem; /* Increased padding */
+    border: none;
+    border-radius: 4px; /* Adjusted radius */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem; /* Slightly larger font */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Alerts */
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px; /* Adjusted radius */
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+/* Footer */
+footer {
+    background: #2c3e50; /* Dark background for contrast */
+    color: #ecf0f1; /* Light text color for readability */
+    padding: 2rem 0; /* Increased padding for a spacious feel */
+}
+
+.footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between text and navigation */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-content p {
+    margin: 0; /* Removes default margin */
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+.footer-nav {
+    display: flex; /* Flexbox for horizontal navigation */
+    list-style: none; /* Removes bullet points */
+}
+
+.footer-nav li {
+    margin-left: 20px; /* Spacing between links */
+}
+
+.footer-nav li:first-child {
+    margin-left: 0; /* Removes left margin for the first item */
+}
+
+.footer-nav a {
+    color: #ecf0f1; /* Light color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-nav a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+        align-items: center; /* Center aligns content */
+        text-align: center; /* Center aligns text */
+    }
+
+    .footer-nav {
+        margin-top: 1rem; /* Adds spacing above navigation on small screens */
+    }
+
+    .footer-nav li {
+        margin-left: 0; /* Removes left margin for vertical layout */
+        margin-bottom: 10px; /* Adds spacing between links */
+    }
+
+    .footer-nav li:last-child {
+        margin-bottom: 0; /* Removes bottom margin for the last item */
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .dashboard-widgets {
+        grid-template-columns: 1fr; /* Stacks widgets on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks navigation items vertically */
+        align-items: center; /* Center aligns the items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Improved spacing for vertical layout */
+    }
+}

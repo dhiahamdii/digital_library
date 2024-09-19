@@ -1,0 +1,227 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font choice */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    width: 80%;
+    margin: auto;
+    padding: 0 20px; /* Side padding */
+}
+
+/* Header */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 30px 0; /* Unified padding */
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px; /* Uniform padding */
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Main content */
+main {
+    padding: 20px 0;
+}
+
+h2 {
+    color: #35424a;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow to forms */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+input:focus {
+    border-color: #e8491d; /* Change border color on focus */
+}
+
+button {
+    display: inline-block;
+    background: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.3s; /* Smooth transition for background */
+}
+
+button:hover {
+    background: #ff6a3c; /* Lighter shade on hover */
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #35424a;
+    color: #fff;
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+/* Ensure full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flexbox setup for the wrapper */
+.wrapper {
+    min-height: 100vh; /* Ensures the wrapper is at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* Arranges content and footer vertically */
+}
+
+.content {
+    flex: 1; /* Takes up available space, pushing footer to the bottom */
+}
+
+/* Footer styling */
+footer {
+    background: #2c3e50; /* Dark background for contrast */
+    color: #ecf0f1; /* Light text color for readability */
+    padding: 2rem 0; /* Increased padding for a spacious feel */
+}
+
+.footer-content {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between text and navigation */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer-content p {
+    margin: 0; /* Removes default margin */
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+.footer-nav {
+    display: flex; /* Flexbox for horizontal navigation */
+    list-style: none; /* Removes bullet points */
+}
+
+.footer-nav li {
+    margin-left: 20px; /* Spacing between links */
+}
+
+.footer-nav li:first-child {
+    margin-left: 0; /* Removes left margin for the first item */
+}
+
+.footer-nav a {
+    color: #ecf0f1; /* Light color for links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-nav a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+        align-items: center; /* Center aligns content */
+        text-align: center; /* Center aligns text */
+    }
+
+    .footer-nav {
+        margin-top: 1rem; /* Adds spacing above navigation on small screens */
+    }
+
+    .footer-nav li {
+        margin-left: 0; /* Removes left margin for vertical layout */
+        margin-bottom: 10px; /* Adds spacing between links */
+    }
+
+    .footer-nav li:last-child {
+        margin-bottom: 0; /* Removes bottom margin for the last item */
+    }
+}
